@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kallyar</title>
+
+    
+	<link rel="icon" type="image/png" href="./images/main-logo.png" sizes="32x32">
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- my css link -->
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="top-header">
+            <div class="logoSearch-container navbar">
+                <div>
+                    <div class="main-logo"><img src="./images/main-logo.png" alt=""><span>Kallyar</span></div>
+                    <div class="search-container">
+                        <div class="search-box">
+                            <div>
+                                <select data-trigger="" name="">
+                                    <option placeholder="">Category</option>
+                                    <option>New Arrivals</option>
+                                    <option>Sale</option>
+                                    <option>Ladies</option>
+                                    <option>Men</option>
+                                    <option>Clothing</option>
+                                    <option>Footwear</option>
+                                    <option>Accessories</option>
+                                </select>
+                            </div>
+                            <input type="search" name="search" id=""><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+                    </div>
+                    <div class="main-favourite">
+                        <div class="language">
+                            <div class="main-language" onclick="toggleBox('.other-languages')"><img src="./images/english.png" alt=""></div>
+                            <div class="other-languages hidden_box">
+                                <a href=""><div><img src="./images/kurdish.png" alt=""></div></a>
+                                <a href=""><div><img src="./images/arabic.png" alt=""></div></a>
+                            </div>
+                        </div>
+                        <div class="card" onclick="toggleBox('.my-cartshopping-sidebar')"><i class="fa-solid fa-cart-shopping"></i><span>3</span></div>
+                        <div class="favorite" onclick="toggleBox('.my-favorite-sidebar')"><i class="fa-solid fa-heart"></i><span>5</span></div>
+                        <div class="notification" onclick="toggleBox('.my-notification-sidebar')"><i class="fa-solid fa-bell"></i><span>+9</span></div>
+                        <div class="top-gear" onclick="toggleBox('.top-gear-sidebar')"><i class="fa-solid fa-gear"></i></div>
+                        <div class="login"><i class="fa-solid fa-user"></i></div>
+                    </div>
+                </div>
+            </div>
+            <nav id="completeTheLook" class="nav-container">
+                <div>
+                    <div class="right-nav">
+                        <div class="mega-menu">
+                            <div><a href=""><i class="fa-solid fa-bars"></i><span>Mega Menu</span></a></div>
+                            <span class="mega-menu-content">
+                                <div>
+                                    <div>
+                                        <a href="">Bags</a>
+                                        <a href="">Luxury</a>
+                                        <a href="">Brands</a>
+                                        <a href="">Video</a>
+                                        <a href="">Social Midea</a>
+                                    </div>
+                                    <div><img src="./images/bags-show/b-show3.jpg" alt=""></div>
+                                    <div><img src="./images/bags-show/b-show8.jpg" alt=""></div>
+                                    <div><img src="./images/bags-show/b-show7.jpg" alt=""></div>
+                                    <div><img src="./images/bags-show/b-show15.jpg" alt=""></div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="nav-line"></div>
+                        <div class="menu-items">
+                            <div><a href=""><i class="fa-solid fa-ellipsis-vertical"></i><span>All</span></a></div>
+                            <div><a href=""><i class="fa-solid fa-bag-shopping"></i><span>Bags</span></a></div>
+                            <div><a href=""><i class="fa-solid fa-gem"></i><span>Luxury</span></a></div>
+                            <div><a href=""><i class="fa-solid fa-font-awesome"></i><span>Brands</span></a></div>
+                            <div class="nav-line"></div>
+                            <div><a href=""><i class="fa-solid fa-message"></i><span>Chat</span></a></div>
+                            <div><a href=""><i class="fa-solid fa-phone"></i><span>Call</span></a></div>
+                            <div><a href=""><i class="fa-solid fa-user"></i><span>About</span></a></div>
+                        </div>
+                    </div>
+                    <div class="left-nav">
+                        <a href=""><i class="fa-solid fa-chalkboard-user"></i><span>How to use this website</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="slider-show">
+            <div>
+                <div class="swiper sliderShowSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slidershow-1-container">
+                                <div class="slider1-box">
+                                    <div class="slider1-text-box">
+                                        <div class="kallyar-text">
+                                            <span>K</span>
+                                            <span>A</span>
+                                            <span>L</span>
+                                            <span>L</span>
+                                            <span>Y</span>
+                                            <span>A</span>
+                                            <span>R</span>
+                                        </div>
+                                        <div class="kallyar-slogan"><span>Find it fast, Buy it easy.</span></div>
+                                        <div class="kallyar-describe"><p>Kallyar is the best shoooooooooooping e-commerce online website in Kurdistan - Iraq</p></div>
+                                    </div>
+                                    <div class="slider1-main-logo"><img src="./images/main-logo.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slidershow-2-container">
+                                <div class="slider2-box">
+                                    <div class="slider2-main-img">
+                                        <div><img src="./images/bags-show/b-show14.jpg" alt=""></div>
+                                        <span class="slidert2-text-box">
+                                            <span>Kallyar</span>
+                                            <p>Find it easy, buy it fast.</p>
+                                        </span>
+                                    </div>
+                                    <div class="slider2-three-img">
+                                        <div><img src="./images/bags-show/b-show2.jpg" alt=""></div>
+                                        <div><img src="./images/bags-show/b-show6.jpg" alt=""></div>
+                                        <div><img src="./images/bags-show/b-show12.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slidershow-3-container">
+                                <div class="slider3-box">
+                                    <div class="slider3-left-side">
+                                        <div><img src="./images/bags-show/b-show5.jpg" alt=""></div>
+                                    </div>
+                                    <div class="slider3-right-side">
+                                        <span class="s3-blur-bg"></span>
+                                        <div>
+                                            <div class="s3rs-one">
+                                                <div><span>Quality</span><span>Cheap</span><span>Close</span><span>Nice</span></div>
+                                                <span>Luxury Section</span>
+                                            </div>
+                                            <div class="s3rs-two"><img src="./images/bags-show/b-show12.jpg" alt=""><img src="./images/bags-show/b-show5.jpg" alt=""><img src="./images/bags-show/b-show2.jpg" alt=""></div>
+                                            <div class="s3rs-three"><span>Best Luxuries</span><div><i class="fa-solid fa-gem"></i><i class="fa-solid fa-shield"></i><i class="fa-solid fa-snowflake"></i><i class="fa-solid fa-bolt"></i><i class="fa-solid fa-heart"></i></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slidershow-4-container">
+                                <div class="slider4-box">
+                                    <div class="slider4-img"><img src="./images/bags-show/b-show1.jpg" alt=""></div>
+                                    <div class="slider4-text-content">
+                                        <h3>Brands Section</h3>
+                                        <h1>Kallyar Brands All Department</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi architecto molestiae ea illo rem eos aspernatur quae voluptatibus exercitationem? Voluptatem sunt pariatur expedita facilis commodi explicabo magnam temporibus aliquam!</p>
+                                        <a href="">See All Brands</a>
+                                    </div>
+                                    <div class="slider4-pagination"><i></i><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">Slide 5</div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="body-content">
+            <div class="body-content-container">
+                <div class="brands-container">
+                    <div class="brands">
+                        <div class="swiper brands-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand1.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand2.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand3.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand4.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand5.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand6.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand7.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand8.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand9.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand10.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand11.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand12.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand13.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand14.png" alt=""></a></div>
+                                <div class="swiper-slide"><a href=""><img src="./images/brands/brand15.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-grid-items">
+                    <div><a href=""><img src="./images/bags-show/b-show6.jpg" alt=""><span>1</span></a></div>
+                    <div><a href=""><img src="./images/bags-show/b-show13-2.jpg" alt=""><span>2</span></a></div>
+                    <div><a href=""><img src="./images/bags-show/b-show8.jpg" alt=""><span>3</span></a></div>
+                    <div><a href=""><img src="./images/bags-show/b-show9.jpg" alt=""><span>4</span></a></div>
+                    <div><a href=""><img src="./images/bags-show/b-show4.jpg" alt=""><span>5</span></a></div>
+                    <div><a href=""><img src="./images/bags-show/b-show5.jpg" alt=""><span>6</span></a></div>
+                </div>
+                <div class="socials-container">
+                    <div class="socials">
+                        <a href="">
+                            <span>Instagram</span>
+                            <div><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="">
+                            <span>Tiktok</span>
+                            <div><i class="fa-brands fa-tiktok"></i></div>
+                        </a>
+                        <a href="">
+                            <span>Snapchat</span>
+                            <div><i class="fa-brands fa-snapchat"></i></div>
+                        </a>
+                        <a href="">
+                            <span>Facebook</span>
+                            <div><i class="fa-brands fa-facebook-f"></i></div>
+                        </a>
+                        <a href="">
+                            <span>Call Center</span>
+                            <div><i class="fa-solid fa-phone"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="items1-container">
+                    <div class="i1-title"><span>Bags Section</span></div>
+                    <div class="i1-content">
+                        <div>
+                            <div class="swiper i1Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="first-child">
+                                            <a href="">
+                                                <div class="i1s-slider-title"><span>Bags</span><span>Section</span></div>
+                                                <div class="i1s-slider-img"><img src="./images/shopping-bags.png" alt=""></div>
+                                                <div class="i1s-slider-seeAll"><span>See All<i class="fa-solid fa-chevron-right"></i></span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags1.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>None Black Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>12000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>17000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags2.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>DLH Brown</span></div>
+                                                <div class="current-price"><span><i>IQD</i>17000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>25000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags13.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>Grey Bag Nav</span></div>
+                                                <div class="current-price"><span><i>IQD</i>45000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>60000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags18.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>Cercle Bag China</span></div>
+                                                <div class="current-price"><span><i>IQD</i>8000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>13000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags22.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>Channel Black Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>6000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>11000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags10.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>Darkred Color Women Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>18000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>24000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/bags/bags7.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide"><div class="last-child"><a href=""><i class="fa-solid fa-arrow-right"></i><span>See All</span></a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner1-container">
+                    <div class="banner1">
+                        <div class="banner1-bg"><img src="./images/bags-show/b-show18.jpg" alt=""><img src="./images/bags-show/b-show22.png" alt=""></div>
+                        <div class="animated-banner-icons">
+                            <div class="b-animated-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <div class="b-animated-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="b-animated-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                            <div class="b-animated-icon"><i class="fa-solid fa-clock"></i></div>
+                        </div>
+                        <span><span>Kallyar</span> is the best e-comerce website in Kurdistan</span>
+                    </div>
+                </div>
+                <div class="items1-container">
+                    <div class="i1-title"><span>Luxury Section</span></div>
+                    <div class="i1-content">
+                        <div>
+                            <div class="swiper i2Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="first-child">
+                                            <a href="">
+                                                <div class="i1s-slider-title"><span>Luxury</span><span>Section</span></div>
+                                                <div class="i1s-slider-img"><img src="./images/shopping-bags.png" alt=""></div>
+                                                <div class="i1s-slider-seeAll"><span>See All<i class="fa-solid fa-chevron-right"></i></span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux1.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux2.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux3.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux4.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux5.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux6.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux7.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux8.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux9.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="slider-item-img"><img src="./images/luxury/lux1.webp" alt=""></div>
+                                            <div class="slider-item-info">
+                                                <div class="item-title-name"><span>White Smoky Bag</span></div>
+                                                <div class="current-price"><span><i>IQD</i>20000</span><div class="price-rate-pin">%20<i>off</i></div></div>
+                                                <div class="old-price"><span>27000</span></div>
+                                                <div class="supplier-name"><span>Kallyar</span></div>
+                                                <div class="addtocard-favorite"><div class="addto-card"><span><i class="fa-solid fa-cart-shopping"></i>Add to card</span></div><div class="item-favorite"><i class="fa-regular fa-heart"></i></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide"><div class="last-child"><a href=""><i class="fa-solid fa-arrow-right"></i><span>See All</span></a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-banner-container">
+                    <div class="two-banner">
+                        <div class="tw-left"><div><span>1</span><img src="./images/bags-show/b-show4.jpg" alt=""></div></div>
+                        <div class="tw-right"><div><span>2</span><img src="./images/bags-show/b-show15.jpg" alt=""></div></div>
+                    </div>
+                </div>
+                <div class="video-slider-container">
+                    <div class="video-slider-title"><span>Taste Section</span></div>
+                    <div class="video-slider-content">
+                        <div>
+                            <div class="swiper i3Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="first-child">
+                                            <a href="">
+                                                <div class="i1s-slider-title"><span>Video</span><span>Section</span></div>
+                                                <div class="i1s-slider-img"><img src="./images/shopping-bags.png" alt=""></div>
+                                                <div class="i1s-slider-seeAll"><span>See All<i class="fa-solid fa-chevron-right"></i></span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem1.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Cloxy DIY Bag</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem2.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Handbag boutique Display</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem3.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Wholesale Trade Show</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem4.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Travel Outdoor</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem5.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Polished Gold Counter</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem6.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Falcon Charm</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem7.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Hot Selling Bag</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <video class="hoverVideo" loop muted>
+                                                <source src="./images/video/viditem8.mp4" type="video/mp4">
+                                            </video>
+                                            <a class="vid-title-link" href="">Custom Hanging</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide"><div class="last-child"><a href=""><i class="fa-solid fa-arrow-right"></i><span>See All</span></a></div></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner2-container">
+                    <div class="banner2">
+                        <div class="banner2-bg"><img src="./images/bags-show/b-show23.jpg" alt=""><img src="./images/bags-show/b-show24.png" alt=""><img src="./images/bags-show/b-show19.jpg" alt=""></div>
+                        <span>Find it easy, Buy it fast.</span>
+                    </div>
+                </div>
+                <div class="body-video-container">
+                    <div class="body-video">
+                        <div>
+                            <video controls autoplay loop muted>
+                                <source src="./images/video/video3.mp4" type="video/mp4">
+                                <source src="./images/video/video1.mp4" type="video/ogg">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-mail-container">
+                    <div class="send-mail-box">
+                        <div class="mail-note-side"><span>Want To Send Us Message?!</span><p><b>Lorem ipsum dolor,</b> sit amet consectetur adipisicing elit. Quis aliquid dolorem necessitatibus nostrum fugiat, veritatis illo doloribus tenetur distinctio?<b> Iure suscipit,</b> error temporibus vel inventore itaque quibusdam maiores, eos eaque iste laborum molestiae officia excepturi odit quod doloremque? Delectus atque praesentium <b> eligendi</b> asperiores, obcaecati sed architecto. Ipsam soluta sapiente ab voluptas nemo error earum quasi,<b> reiciendis </b>incidunt totam fugiat officia, tenetur alias neque rem illum praesentium impedit laboriosam tempore aliquid veniam dignissimos! Inventore ratione dolores vero corrupti consequatur voluptates nisi eos ex velit odit deleniti et, possimus provident,<b> praesentium obcaecati</b> non delectus ipsa! Soluta odit laboriosam quo. Laudantium, hic aut?</p></div>
+                        <div class="mail-content-side">
+                            <div class="m-content-title">
+                                <div class="mc-title"><div><input type="text" name="subject" id="" placeholder="Subject"></div></div>
+                            </div>
+                            <div class="m-content-inputs">
+                                <div class="m-content-left">
+                                    <div class="mc-your-name"><div><input type="text" name="name" id="" placeholder="Your Name"></div></div>
+                                    <div class="mc-your-email"><div><input type="email" name="email" id="" placeholder="E-Mail"></div></div>
+                                    <div class="mc-your-nomber"><div><input type="text" name="number" id="" placeholder="Phone Number"></div></div>
+                                    <div class="mc-your-city">
+                                        <div>
+                                            <input list="locations" id="location" name="location" placeholder="Your City">
+                                            <datalist id="locations">
+                                                <option value="Erbil">
+                                                <option value="Sulaimany">
+                                                <option value="Kerkuk">
+                                                <option value="Duhok">
+                                            </datalist>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-content-right">
+                                    <div class="mc-choose-pc"><div><input type="file" name="file" id=""></div></div>
+                                    <div class="mc-paragraph"><div><textarea type="text" name="Message" rows="8" cols="8" id="" placeholder="Message"></textarea></div></div>
+                                </div>
+                            </div>
+                            <div class="m-content-send"><div><input type="submit" value="Send"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div>
+                <div class="footer-content">
+                    <div>
+                        <span>About</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui laudantium ullam maxime? Nisi dolores excepturi temporibus reprehenderit recusandae, facere perferendis officiis quasi quis distinctio, illo qui dolorem optio quisquam!</p>
+                    </div>
+                    <div>
+                        <span>Contact US</span>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i><span>0776 926 6789</span></a>
+                        <a href=""><i class="fa-solid fa-phone"></i><span>0750 046 1863</span></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i><span>kallyar.com@gmail.com</span></a>
+                        <a href=""><i class="fa-solid fa-globe"></i><span>www.kallyar.com</span></a>
+                    </div>
+                    <div>
+                        <span>Menu</span>
+                        <a href=""><span>Bags</span></a>
+                        <a href=""><span>Luxury</span></a>
+                        <a href=""><span>Handbag Holder</span></a>
+                        <a href=""><span>Brands</span></a>
+                        <a href=""><span>Gifts</span></a>
+                    </div>
+                    <div>
+                        <span>Follow US</span>
+                        <a href=""><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i><span>Snapchat</span></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+                    </div>
+                    <div>
+                        <span>Cities</span>
+                        <a href=""><span>Erbil</span></a>
+                        <a href=""><span>Sulaimany</span></a>
+                        <a href=""><span>Duhok</span></a>
+                        <a href=""><span>Kerkuk</span></a>
+                    </div>
+                </div>
+                <div class="between-line"></div>
+                <div class="copy-right"><span>Developed by | <a href="www.absurchi.com">abSurchi</a></span></div>
+                <button id="backToTop">Back to Top<i class="fa-solid fa-arrow-up"></i></button>
+            </div>
+        </footer>
+
+
+        <div class="my-favorite-sidebar hidden_box">
+            <div class="favorite-sidbar-container closeclickable">
+                <div class="favoriteBar-cont">
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="my-cartshopping-sidebar hidden_box">
+            <div class="cartshopping-sidbar-container closeclickable">
+                <div class="cartshoppingBar-cont">
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="my-notification-sidebar hidden_box">
+            <div class="notification-sidbar-container closeclickable">
+                <div class="notificationBar-cont">
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="top-gear-sidebar hidden_box">
+            <div class="gear-container closeclickable">
+                <div class="gear-cont">
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+<script>
+    document.querySelectorAll(".hoverVideo").forEach((video) => {
+        video.addEventListener("mouseenter", () => {
+            video.controls = true; // Show controls on hover
+            video.play();
+        });
+
+        video.addEventListener("mouseleave", () => {
+            video.controls = false; // Hide controls when not hovering
+            video.pause();
+        });
+    });
+</script>
+<!-- my js code -->
+<script src="./script.js"></script>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".sliderShowSwiper", {
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 400000,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".i1Slider", {
+      slidesPerView: "auto",
+      spaceBetween: 4,
+      freeMode: true,
+      keyboard: {
+        enabled: true,
+      },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".i2Slider", {
+      slidesPerView: "auto",
+      spaceBetween: 4,
+      freeMode: true,
+      keyboard: {
+        enabled: true,
+      },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".i3Slider", {
+      slidesPerView: "auto",
+      spaceBetween: 4,
+      freeMode: true,
+      keyboard: {
+        enabled: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".brands-slider", {
+      slidesPerView: "auto",
+      keyboard: {
+        enabled: true,
+      },
+      freeMode: true,
+    });
+</script>
+</body>
+</html>
