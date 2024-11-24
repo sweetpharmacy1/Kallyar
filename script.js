@@ -218,3 +218,51 @@ spans.forEach((span, idx) => {
 		span.classList.add('active');
 	}, 750 * (idx+1))
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+//document.querySelector(".hamburger_button").addEventListener("click", function() {
+//  this.classList.toggle("closeBurger");
+//});
+
+
+
+document.querySelector(".mega-menu").addEventListener("click", function() {
+  const hamburgerButton = document.querySelector(".hamburger_button");
+  const megaMenuContent = document.querySelector(".mega-menu-content");
+  
+  // Toggle the 'closeBurger' class on the hamburger button
+  hamburgerButton.classList.toggle("closeBurger");
+  
+  // Toggle the display of the mega-menu content
+  if (megaMenuContent.style.display === "block") {
+    megaMenuContent.style.display = "none"; // Hide if it's already visible
+  } else {
+    megaMenuContent.style.display = "block"; // Show if it's hidden
+  }
+});
+
+// Close mega-menu-content and toggle .closeBurger class if clicked outside
+document.addEventListener("click", function(event) {
+  const hamburgerButton = document.querySelector(".hamburger_button");
+  const megaMenuContent = document.querySelector(".mega-menu-content");
+  const megaMenu = document.querySelector(".mega-menu");
+  
+  // Check if the click was outside the mega-menu and mega-menu-content
+  if (!megaMenu.contains(event.target) && !megaMenuContent.contains(event.target)) {
+    megaMenuContent.style.display = "none"; // Hide mega-menu content
+    hamburgerButton.classList.remove("closeBurger"); // Remove the 'closeBurger' class
+  }
+});
+
+
