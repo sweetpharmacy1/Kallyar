@@ -379,9 +379,55 @@ a {
     padding: 0 30px 0 0;
     transition: all 0.3s ease-in-out;
 }
-.mega-menu div a i {
+.mega-menu div a > div {
     margin-right: 8px;
 }
+
+.mega-menu div.hamburger_button {
+    width: 20px;
+    height: auto;
+  }
+  .mega-menu div.hamburger_button > div {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    position: relative;
+  }
+  .mega-menu div.hamburger_button > div > div {
+    background-color: #000;  /* You may change the bars' color here */
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    border-radius: 1000px;
+    left: 9%;
+    top: 45%;
+    transition: transform 0.1s linear,
+      top 0.25s linear 0.1s,
+      width 0s linear 0.1s;
+  }
+  .mega-menu div.hamburger_button > div div:nth-child(1) {
+    top: 20%;
+  }
+  .mega-menu div.hamburger_button > div div:nth-child(3) {
+    top: 70%;
+  }
+  .mega-menu div.closeBurger div > div {
+    transition: transform 0.25s linear 0.1s,
+      top 0.1s linear,
+      width 0s linear 0.1s;
+  }
+  .mega-menu div.closeBurger > div div:nth-child(1) {
+    top: 45% !important;
+    transform: rotate(45deg);
+  }
+  .mega-menu div.closeBurger > div div:nth-child(2) {
+    width: 0;
+    
+  }
+  .mega-menu div.closeBurger > div div:nth-child(3) {
+    top: 45% !important;
+    transform: rotate(-45deg);
+  }
 
 
 .menu-items > div > a::before,
