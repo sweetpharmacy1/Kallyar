@@ -3065,6 +3065,9 @@ button#backToTop i {
     .menu-items > div a i {
         margin-right: 5px;
     }
+    .slider-show {
+        height: 95vh;
+    }
 }
 @media (max-width: 450px) {
     .mega-menu-content > div > div:nth-child(1) a {
