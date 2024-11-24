@@ -3120,6 +3120,13 @@ button#backToTop i {
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
     }
+    .slider1-main-logo {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        padding: 55px;
+    }
 }
 @media (max-width: 370px) {
     .mega-menu-content > div > div:nth-child(1) a {
