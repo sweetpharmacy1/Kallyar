@@ -1076,6 +1076,8 @@ span.slidert2-text-box p {
     position: absolute;
     display: flex;
     right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     flex-direction: column;
 }
 .slider4-pagination i {
@@ -2853,6 +2855,9 @@ button#backToTop i {
         font-size: 25px;
         padding: 5px 20px;
     }
+    .banner2-container {
+        height: 100px;
+    }
 }
 @media (max-width: 650px) {
     .slider3-box {
@@ -2892,8 +2897,12 @@ button#backToTop i {
         position: relative;
         left: auto;
         order: 2;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
     }
     .slider4-box {
+        justify-content: space-between;
         flex-direction: column;
         padding-left: 0;
         transform: translateX(0px);
@@ -2901,7 +2910,7 @@ button#backToTop i {
         height: 95%;
     }
     .slider4-text-content {
-        height: 50%;
+        height: auto;
         order: 1;
     }
     .mega-menu div a {
@@ -2921,6 +2930,10 @@ button#backToTop i {
         min-width: 200px;
         min-height: 180px;
     }
+    .slider4-pagination i {
+        width: 12px;
+        height: 12px;
+    }
 }
 @media (max-width: 500px) {
     .socials {
@@ -2938,7 +2951,10 @@ button#backToTop i {
         min-height: 350px;
     }
     .slider1-text-box {
-        padding: 30px 20px 20px 0;
+        padding: 0px 20px 20px 0;
+    }
+    .slider2-three-img {
+        bottom: 30px;
     }
     .slider2-three-img > div {
         width: 100px;
@@ -2948,16 +2964,23 @@ button#backToTop i {
     span.slidert2-text-box {
         right: 75px;
     }
+    .s3rs-two {
+        padding: 0;
+    }
     .s3rs-two img {
         width: 120px;
         height: 185px;
+    }
+    .s3rs-one, .s3rs-two, .s3rs-three {
+        padding-left: 7px;
+        padding-right: 7px;
     }
     .mega-menu-content > div > div {
         min-width: 175px;
         min-height: 160px;
     }
-    .body-content-container {
-        padding: 0 5px;
+    .slider4-text-content h1 {
+        font-size: 20px;
     }
 }
 
@@ -3069,6 +3092,9 @@ button#backToTop i {
     .m-content-send {
         margin-top: 10px;
     }
+    .mail-content-side {
+        height: 340px;
+    }
 }
 @media (max-width: 500px) {
     .b-grid-items {
@@ -3113,6 +3139,9 @@ button#backToTop i {
     }
     .slider-show {
         height: 95vh;
+    }
+    .m-content-right {
+        padding-left: 10px;
     }
 }
 @media (max-width: 450px) {
@@ -3172,6 +3201,16 @@ button#backToTop i {
         min-width: 300px;
         min-height: 300px;
         padding: 55px;
+    }
+    .s3rs-two img {
+        width: 100px;
+        height: 160px;
+    }
+    .slider3-right-side > div > div {
+        height: 30%;
+    }
+    .slider3-right-side > div {
+        margin-top: 90px;
     }
 }
 @media (max-width: 370px) {
