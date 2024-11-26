@@ -1112,6 +1112,7 @@ span.slidert2-text-box p {
 }
 /******************** start of - body grid item ********************/
 .b-grid-items {
+    position: relative;
     margin-top: 50px;
     height: calc(100vh - 40px);
     display: grid;
@@ -3231,4 +3232,172 @@ button#backToTop i {
         font-size: 22px;
         padding: 3px 30px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes for different animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeVisible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeEmailBox {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 60px, 0);
+    }
+}
+/* Base class for fade-in animations */
+.fadeIn {
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Prevent visibility before animation starts */
+}
+
+/* Dynamic class to trigger animation */
+.animated {
+    animation-duration: 1s; /* Set common animation duration */
+    animation-fill-mode: forwards; /* Retain final animation state */
+    visibility: visible; /* Ensure element is visible during animation */
+}
+
+/* Specific animations */
+.fadeInLeft.animated {
+    animation-name: fadeInLeft;
+}
+.fadeInRight.animated {
+    animation-name: fadeInRight;
+}
+.fadeInDown.animated {
+    animation-name: fadeInDown;
+}
+.fadeInUp.animated {
+    animation-name: fadeInUp;
+}
+.fadeVisible.animated {
+    animation-name: fadeVisible;
+}
+.fadeScale.animated {
+    animation-name: fadeScale;
+}
+.fadeEmailBox.animated {
+    animation-name: fadeEmailBox;
+}
+
+/* Apply staggered delays */
+.delay-0 {
+    animation-delay: 0s;
+}
+.delay-1 {
+    animation-delay: 0.2s; /* Delay of 0.2 seconds */
+}
+.delay-2 {
+    animation-delay: 0.4s; /* Delay of 0.4 seconds */
+}
+.delay-3 {
+    animation-delay: 0.6s;
+}
+.delay-4 {
+    animation-delay: 0.8s; /* Delay of 0.2 seconds */
+}
+.delay-5 {
+    animation-delay: 1s;
+}
+.delay-6 {
+    animation-delay: 1.2s; /* Delay of 0.2 seconds */
+}
+.delay-7 {
+    animation-delay: 1.4s; /* Delay of 0.4 seconds */
+}
+.delay-8 {
+    animation-delay: 1.6s;
+}
+.delay-9 {
+    animation-delay: 1.8s; /* Delay of 0.2 seconds */
+}
+.delay-10 {
+    animation-delay: 2s; /* Delay of 0.2 seconds */
+}
+.delay-11 {
+    animation-delay: 2.2s; /* Delay of 0.2 seconds */
+}
+.delay-12 {
+    animation-delay: 2.4s; /* Delay of 0.4 seconds */
+}
+.delay-13 {
+    animation-delay: 2.6s;
+}
+.delay-14 {
+    animation-delay: 2.8s; /* Delay of 0.2 seconds */
+}
+.delay-15 {
+    animation-delay: 3s; /* Delay of 0.2 seconds */
 }
