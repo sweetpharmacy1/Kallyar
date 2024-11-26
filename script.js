@@ -266,3 +266,38 @@ document.addEventListener("click", function(event) {
 });
 
 
+
+
+
+//////////////////////////////
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fadeIn"); // Select all fade-in elements
+
+  const observer = new IntersectionObserver(
+      (entries, observer) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting && entry.boundingClientRect.top > 0) {
+                  const element = entry.target;
+
+                  // Find animation class (e.g., fadeInLeft, fadeInRight)
+                  const animationClass = Array.from(element.classList).find(cls =>
+                      cls.startsWith("fadeIn")
+                  );
+
+                  if (animationClass) {
+                      element.classList.add("animated", animationClass); // Add `animated` and retain specific animation class
+                      observer.unobserve(element); // Stop observing after animation triggers
+                  }
+              }
+          });
+      },
+      { threshold: 0.2 } // Trigger when 20% of the element is visible
+  );
+
+  elements.forEach((element) => observer.observe(element));
+});
